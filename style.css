@@ -47,74 +47,76 @@ table {
 	border-spacing: 0;
 }
 
-body {
-  background-color: #FFF6D1;
-  font-family: 'Asap', sans-serif;
-}
-
-.post-container {
-  width: 100%;
-  margin: 0 auto;
-/*background-color:yellow;*/
-}
-
 header{
-  position: fixed;
-  top:0;
-  left:0;
-  right:0;
-  background-color: #2D7F9C;
-  padding: 1em 0;
+	background-color: rgba(46,83,150,0.9);
+	height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	list-style: none;
 }
 
 nav {
-  position: relative;
-  top: 0;
-  left: 0;
-	float: left;
-}
-
-	nav ul {
-		content: ""; clear: both;
-		list-style: none;
-		position: relative;
-		display: inline-block;
-		}
-
-	nav ul:after {
-			content: ""; clear: both;
-			display: block;
-		}
-
-	nav ul ul {
-		display:none;
+		position:relative;
 		padding: 0;
-		position: absolute;
-		top: 100%;
-		float: none;
+    margin: 0 0 0 0;
+
 	}
 
-	nav ul li:hover> ul {
-		display: block;
-		float: none;
-	}
-
-	nav ul li a {
-		display: block;
-		padding: 1em;
-	}
-
-
-a {
-  color: white;
-  text-decoration: none;
-  padding: 1em;
+ul {
+    list-style-type: none;
+		margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: none;
+	  position:fixed;
+	  top: 0;
+	  width: 100%;
 }
 
-a:hover {
-  color: yellow;
-  background-color: blue;
+li {
+    float: left;
 }
+
+li a, .caribebtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .caribemenu:hover .caribebtn {
+    background-color: rgba(31, 57, 105, 0.9);
+}
+
+li.caribemenu {
+    display: inline-block;
+}
+
+.caribemenuconteudo {
+    display: none;
+    position:relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.caribemenuconteudo a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.caribemenuconteudo a:hover {background-color: #f1f1f1}
+
+.caribemenu:hover .caribemenuconteudo {
+    display: block;
+
+	}
 
 img {
 width: 100%;
@@ -124,12 +126,13 @@ margin: 0 auto;
 }
 
 div {
-  margin: 0 auto;
+  margin: 3em auto;
   width: 60%;
 }
 
 		h1 {
 		  font-size: 3.5em;
+			color:rgb(31, 57, 105);
 		  padding: 0.5em 0;
 		  position:relative;
 		  top: 20px
@@ -148,6 +151,7 @@ div {
 		h3 {
 			font-size: 1em;
 		  padding-bottom: 1em;
+			color:rgb(31, 57, 105);
 		}
 
 		i {
@@ -157,7 +161,24 @@ div {
 		p {
 			font-size: 0.9em;
 		  padding-bottom: 1.2em;
+			line-height: normal;
 		}
 
+		body {
+		  background-color: #FFF6D1;
+		  font-family: 'Asap', sans-serif;
+		}
 
+		.post-container {
+		  width: 100%;
+		  margin: 0 auto;
+		/*background-color:yellow;*/
+		}
+
+		.fotos {
+			float: right;
+			padding: 10px;
+    	margin: 25px 0 25px 0;
+		  width:35%;
+		}
 }
