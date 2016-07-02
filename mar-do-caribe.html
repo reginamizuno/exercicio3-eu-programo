@@ -9,31 +9,27 @@
   <body>
     <header>
       <nav>
-        <ul>
-        <li><a href="index.html">Ilhas Gregas</a></li>
-        <li class="caribemenu">
-          <a href="mar-do-caribe.html" class="caribebtn">Caribe</a>
-          <div class="caribemenuconteudo">
-              <a href="#">Centro histórico</a>
-              <a href="#">Como Chegar</a>
-          </div>
+        <ul class="main">
+          <li>
+            <a href="index.html">Ilhas Gregas</a>
           </li>
-          </ul>
+          <li>
+            <a href="#">Bahamas</a>
+          </li>
+          <li>
+            <a href="mar-do-caribe.html">Caribe</a>
+              <ul class="submenu">
+                <li><a href="#">Praias</a></li>
+                <li><a href="#">Centro Histórico</a></li>
+              </ul>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <section class='post-container'>
-      <img src="imagens/caribe.jpg" alt="descrição da imagem" />
-    </section>
-      <!-- meu comentario -->
-
-      <div>
-        <div class='fotos'>
-          <img src="imagens/caribe1.jpg" alt="imagem de cadeiras e mar ao fundo" />
-          <img src="imagens/caribe2.jpg" alt="imagem de ponte sobre o mar" />
-          <img src="imagens/caribe3.jpg" alt="vista superior da cidade do Ca" />
-        </div>
-
+ <article>
+    <img src="imagens/caribe.jpg" class="full-width"/>
+    <section class="content">
         <h1>Caribe</h1>
         <h2>Da série <b>volta ao mundo em 365 dias</b></h2>
         <h3>Bianca da silva <i> 10 de maio de 2016 </i></h3>
@@ -53,8 +49,13 @@
         <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
+    </section>
 
-      </div>
-
-  </body>
+    <section class='ads'>
+          <img src="imagens/caribe1.jpg" alt="imagem de cadeiras e mar ao fundo" />
+          <img src="imagens/caribe2.jpg" alt="imagem de ponte sobre o mar" />
+          <img src="imagens/caribe3.jpg" alt="vista superior da cidade do Ca" />
+    </section>
+  </article>
+</body>
 </html>
